@@ -1,3 +1,3 @@
-import { log } from "console";
+import { initApplication } from "./conf/bootstrap";
 
-log("Hello, World!");
+initApplication();
