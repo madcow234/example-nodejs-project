@@ -1,0 +1,24 @@
+{
+  "name": "example-nodejs-project",
+  "version": "1.0.0",
+  "description": "An example Node.js project with ES6+, linting, logging, and testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadCow234/example-nodejs-project.git"
+  },
+  "keywords": [
+    "nodejs",
+    "framework"
+  ],
+  "author": "MadCow234",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MadCow234/example-nodejs-project/issues"
+  },
+  "homepage": "https://github.com/MadCow234/example-nodejs-project#readme"
+}
