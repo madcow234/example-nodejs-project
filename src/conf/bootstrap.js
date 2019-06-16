@@ -1,4 +1,4 @@
-import { log, error } from "console";
+import { error } from "console";
 
 export const initApplication = async () => {
   try {
@@ -6,8 +6,9 @@ export const initApplication = async () => {
     if (process.env.NODE_ENV !== "production") {
       require("dotenv").config();
     }
-    log("Node environment: " + process.env.NODE_ENV);
-    log("Application launched successfully!");
+    const log = require("./logging")(__filename);
+    log.info("Node environment: " + process.env.NODE_ENV);
+    log.info("Application launched successfully!");
   } catch (err) {
     error(`APP FAILED TO LAUNCH: ${err}`);
     process.exit();
